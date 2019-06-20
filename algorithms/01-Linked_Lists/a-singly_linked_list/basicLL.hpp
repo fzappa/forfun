@@ -28,8 +28,8 @@ class NodeList {
 
     int isEmpty() { return headNode == nullptr; }
 
-    void addHeadNode(std::string);
-    void addTailNode(std::string);
+    void pushHead(std::string);
+    void pushTail(std::string);
     bool isInList(std::string) const;
 };
 

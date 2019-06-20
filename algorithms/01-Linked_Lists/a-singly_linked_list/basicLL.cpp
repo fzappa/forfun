@@ -1,6 +1,6 @@
 #include "basicLL.hpp"
 #include <iostream>
-#include <memory>
+
 
 NodeList::~NodeList()
 {
@@ -11,14 +11,14 @@ NodeList::~NodeList()
     }
 }
 
-void NodeList::addHeadNode(std::string name)
+void NodeList::pushHead(std::string name)
 {
     std::cout << "Add " << name << " node." << std::endl;
     headNode = new Node(name, headNode);
     if (tailNode == nullptr)
         tailNode = headNode;
 }
-void NodeList::addTailNode(std::string name)
+void NodeList::pushTail(std::string name)
 {
     if (tailNode != nullptr) {  // if list not empty;
         tailNode->nextNode = new Node(name);

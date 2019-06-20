@@ -5,9 +5,9 @@ int main(int argc, char *argv[])
 {
     NodeList list;
 
-    list.addHeadNode("primeiro");
-    list.addHeadNode("segundo");
-    list.addHeadNode("terceiro");
+    list.pushHead("first");
+    list.pushHead("second");
+    list.pushHead("third");
 
     return 0;
 }
